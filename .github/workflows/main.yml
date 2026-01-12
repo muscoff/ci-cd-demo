@@ -1,0 +1,16 @@
+name: Simple CI
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run a sample check
+        run: echo "CI pipeline is running successfully!"
