@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run a sample check
-        run: echo "CI pipeline is running successfully!"
+        run: exit 1
